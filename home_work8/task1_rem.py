@@ -1,8 +1,6 @@
 n = int(input("Введіть розмір квадратної матриці: "))
 matrix = [[i if i % 2 == 0 else j - n + 1 for j in range(n)] for i in range(n)]
 
-
-
 print("Варіант №1")
 for row in matrix:
     formatted_row = "  ".join(f"{num:>3}" for num in row)
